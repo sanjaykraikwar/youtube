@@ -3,38 +3,25 @@
 // Search for a specified string.
 function search() {
 	
-	
-	
-	
-	
 	var keyword = document.getElementById('query').value;
 
-
 	var req = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyB7VkFIbTYbzvFfDV8A7eiMWdKQVSeQ3b0&type=video&part=snippet&maxResults=15&q=' + keyword;
-
-
 
 	var json = fetch(req).then(function (response) {
 
 		return response.json();
 	}).then(function (data) {
 
-
-
 		var maincontents = document.getElementById("maincontents");
 
 		maincontents.innerHTML = '';
-
-
+		
 		var slide = new Array(4);
 		var count=0;
 		for (let i = 0; i < 4; i++) {
 			slide[i] = document.createElement('div');
 
 			slide[i].setAttribute('class', 'mySlides');
-
-		
-			
 			
 			var str1 = '<div class="row pagination">';
 
@@ -111,11 +98,7 @@ function search() {
 			para1.innerHTML ='<i class="fa fa-male fa-2x icon" aria-hidden="true"></i><span class="details">'+ data.items[i].snippet.channelTitle +'</span>' ;
 			
 			para2.innerHTML = '<i class="fa fa-calendar fa-2x icon" aria-hidden="true"></i><span class="details">' + data.items[i].snippet.publishedAt +'</span>' ;
-			
-			//para3.innerHTML = '<i class="fa fa-eye" aria-hidden="true"></i>'+1001;
-			
-			
-			
+				
 			detailsdiv.appendChild(para1);
 			
 			detailsdiv.appendChild(para2);
@@ -126,10 +109,6 @@ function search() {
 			descdiv.appendChild(description);
 			
 			detailsdiv.appendChild(descdiv);
-			
-			
-
-
 			
 			showDivs(1);
 
