@@ -1,0 +1,98 @@
+
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+button,input,textarea{font:inherit;margin:0}optgroup{font-weight:bold}
+
+h4{font-size:20px; font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:2px 0}.wide{letter-spacing:4px}
+
+
+.details {
+    padding-left: 15%;
+}
+
+.description {
+    padding-left: 5%;
+}
+
+
+
+.black{color:#fff;background-color:#000}
+.blue-grey{color:#fff;background-color:#607d8b}
+.display-left{position:absolute;top:50%;left:0%;}
+.display-right{position:absolute;top:50%;right:0%;}
+.display-topmiddle{position:absolute;left:50%;top:0;}
+.display-bottommiddle{position:relative;left:40%;bottom:0;}
+
+
+.right{position:relative;top:50%;right:0%;}
+
+
+.text{
+	box-shadow: 1px 1px 2px 2px;
+}
+
+.icon{
+	position: relative;
+left:4%;
+right:5%;
+top: 6%;
+
+}
+
+
+.container{
+width:90%;
+height:90%;
+margin:2% auto;
+display: block;
+box-shadow: 2px 3px 15px 8px;
+}
+
+.container5 {
+  height: 4em;
+  display: flex;
+margin-top: 1%;
+  margin-left: 40%
+  }
+  
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.column {
+	 position: relative;
+    float: left;
+    width: 25%;
+	Height: 80%;
+	border:1px solid;
+	box-shadow: 1px 1px 2px 2px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
