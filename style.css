@@ -17,9 +17,9 @@ h4{font-size:20px; font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margi
 .black{color:#fff;background-color:#000}
 .blue-grey{color:#fff;background-color:#607d8b}
 .display-left{position:absolute;top:50%;left:0%;}
-.display-right{position:absolute;top:50%;right:0%;}
+.display-right{position:absolute;top:45%;right:0%;}
 .display-topmiddle{position:absolute;left:50%;top:0;}
-.display-bottommiddle{position:relative;left:40%;bottom:0;}
+.display-bottommiddle{position:relative;left:40%;bottom:0; }
 
 
 .right{position:relative;top:50%;right:0%;}
@@ -83,8 +83,8 @@ margin-top: 1%;
 }
 
 
-
 .pagination {
+ 
     display: inline-block;
 }
 
@@ -93,4 +93,15 @@ margin-top: 1%;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
 }
